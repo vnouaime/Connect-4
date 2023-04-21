@@ -1,0 +1,58 @@
+body {
+  text-align: center; /* Aligning all text in the center */
+}
+
+
+/* Connect 4 Table */
+#board {
+  width: 630px;
+  height: 540px;
+  border: 10px solid #f0ea54;
+  background-color: #f0ed97;
+  
+  /* Centering board and wrapping all html elements so that they are not on one line */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Tiles */
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid #f0ea54
+}
+
+/* Red Chip */
+.red-chip {
+  background-color: red;
+}
+
+/* Blue Chip */
+.blue-chip {
+  background-color: blue;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+/* .piece {
+  /* TODO: make into circles 
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+} */
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+/* #column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+} */
