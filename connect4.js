@@ -87,7 +87,6 @@ function checkForWin() {
       const diagDL = [[r, c], [r + 1, c - 1], [r + 2, c - 2], [r + 3, c - 3]];
       
       if (_win(horiz) || _win(vert) || _win(diagDR) || _win(diagDL)) {
-        gameOver = true;
         setWinner(r, c);
         return;
       } 
@@ -97,6 +96,7 @@ function checkForWin() {
 
 const setWinner = (r, c) => {
     const winner = document.getElementById("winner");
+    gameOver = true;
     if (board[r][c] === playerRed) {
         winner.innerText = "Red Wins!";
     }
